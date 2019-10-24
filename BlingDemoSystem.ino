@@ -77,13 +77,13 @@ void loop(void)
     // up or down
     if (sensorValue < 10)
     {
-        rotate_down(&strip);
-        rotate_down(&ring);
+        rotate_down(strip);
+        rotate_down(ring);
     }
     else if (sensorValue > 10)
     {
-        rotate_up(&strip);
-        rotate_up(&ring);
+        rotate_up(strip);
+        rotate_up(ring);
     }
     // If the sensor value is between the ranges above, the pixels don't move
 

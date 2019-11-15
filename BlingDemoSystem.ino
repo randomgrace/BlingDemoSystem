@@ -39,8 +39,8 @@ void setup(void)
     ring.begin();
 
     // Clear the pixel strips to all off
-    all_pixels(&strip, Adafruit_NeoPixel::Color(0, 0, 0));
-    all_pixels(&ring, Adafruit_NeoPixel::Color(0, 0, 0));
+    all_pixels(strip, Adafruit_NeoPixel::Color(0, 0, 0));
+    all_pixels(ring, Adafruit_NeoPixel::Color(0, 0, 0));
 
     // Set up a rainbow pattern on the strip
     strip.setPixelColor(0, Adafruit_NeoPixel::Color(32, 0, 0));

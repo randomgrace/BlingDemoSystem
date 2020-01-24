@@ -39,8 +39,8 @@ void setup(void)
     ring.begin();
 
     // Clear the pixel strips to all off
-    all_pixels(&strip, Adafruit_NeoPixel::Color(0, 0, 0));
-    all_pixels(&ring, Adafruit_NeoPixel::Color(0, 0, 0));
+    all_pixels(strip, Adafruit_NeoPixel::Color(0, 0, 0));
+    all_pixels(ring, Adafruit_NeoPixel::Color(0, 0, 0));
 
     // Set up a rainbow pattern on the strip
     strip.setPixelColor(0, Adafruit_NeoPixel::Color(32, 0, 0));
@@ -77,13 +77,13 @@ void loop(void)
     // up or down
     if (sensorValue < 10)
     {
-        rotate_down(&strip);
-        rotate_down(&ring);
+        rotate_down(strip);
+        rotate_down(ring);
     }
     else if (sensorValue > 10)
     {
-        rotate_up(&strip);
-        rotate_up(&ring);
+        rotate_up(strip);
+        rotate_up(ring);
     }
     // If the sensor value is between the ranges above, the pixels don't move
 

@@ -23,8 +23,6 @@
  * - Important: validate PIN connection and number of LEDs
  * - Note: this NeoMatrix does not have 'w' component
  */
-#include <Adafruit_GFX.h>
-#include <Adafruit_NeoMatrix.h>
 #include <Adafruit_NeoPixel.h>
 
 // Configuration for our LED strip and Arduino
@@ -307,12 +305,12 @@ void loop() {
       crawler(10, rgbColor_RED.color, 30);
       break;
 
+    // TODO: TEST the FOLLOWING ANIMATIONS
     case RUNNING_LIGHTS:
       // void runningLights(rgbColor color, uint8_t wait) 
       runningLights(rgbColor_MAGENTA, 50);
       break;
       
-    // TODO: TEST the FOLLOWING ANIMATIONS
     case COGS_BLUE_YELLOW:
       cogs(rgbColor_BLUE.color, rgbColor_YELLOW.color);
       break;
